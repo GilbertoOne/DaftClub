@@ -224,3 +224,11 @@ li{
         top: 750px;
     }
 }
+#FotoPerfil:not(:hover){
+    background-color: #333333;
+    transition: .4s;
+}
+#FotoPerfil:hover{
+    background-color: #111111; 
+    transition: .4s;
+}

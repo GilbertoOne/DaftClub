@@ -3,9 +3,12 @@
 </head>
 <div class="col" id="left-bar">
       <div class="col-md-2">
-		<img class="pp" src="<?php echo $image; ?>" height="160" width="160">
+		<img class="pp" src="<?php echo $image; ?>" height="200" width="200">
 		<br>
-		<a class="btn btn-success" href="change_pic.php">Cambiar Foto de Perfil</a>
+		<div style="cursor:pointer;" onclick="location.href='change_pic.php'" id="FotoPerfil" class="btn btn-success">
+            <B>Cambiar foto de perfil</B>
+          </div> 
+		
       </div>
 		<div class="col-md-5">
 			<p>Perfil</p>
@@ -19,10 +22,10 @@
 		<hr>
       <div class="col-md-5">
 			<form method="post" action="post.php">
-						<textarea name="content" placeholder="Haz tus sugerencias aquí"></textarea>
+						<textarea name="content" placeholder="Haz tus sugerencias aquí" style="color: #111111;"></textarea>
 						<br>
 						<hr>
-						<button class="btn btn-success">Compartir </button>
+						<button class="btn btn-success" id="BtnCompartir" style="color:#111111">Compartir </button>
 			</form>
       </div>
     </div> 
