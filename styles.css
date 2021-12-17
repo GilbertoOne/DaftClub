@@ -4,6 +4,29 @@
     text-align:center;
     color: #E5E6EB;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    transition: .3s;
+    color: #0078a7;
+}
+input{
+    color:#111111;
+}
+button:not(:hover){
+    background-color: #333333;
+    font-size: large;
+    width: 50%;
+    transition: .4s;
+}
+button:hover{
+    font-size: large;
+    width: 50%;
+    transition: .4s;
+    background-color:#E5E6EB;
+    color: #333333;
+}
 /*Clases*/
 
 .fadeClass {
@@ -221,6 +244,7 @@ li{
         width:100%;
         margin: auto;
         top: 750px;
+        left: 5px;
     }
 }
 #FotoPerfil:not(:hover){
@@ -230,4 +254,29 @@ li{
 #FotoPerfil:hover{
     background-color: #111111; 
     transition: .4s;
+}
+#stories{
+    color : #111111;
+    background-color: #ffffff3d;
+    border:1px solid;
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding-top:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+#BtnCompartir:not(:hover){
+    background-color: #333333;
+    font-size: large;
+    width: 50%;
+    transition: .4s;
+}
+#BtnCompartir:hover{
+    font-size: large;
+    width: 50%;
+    transition: .4s;
+    background-color:#E5E6EB;
+    color: #333333;
 }

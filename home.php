@@ -29,32 +29,35 @@
         <div class="panel">
             <div class="panel-body">
             <!--/stories-->
-            <div class="row">    
+            <div class="row" >    
                 <br>
-                    <?php
-        $query = $conn->query("select * from post LEFT JOIN miembros on miembros.id_miembro = post.id_miembro order by id_post DESC");
-        while($row = $query->fetch()){
-        $posted_by = $row['nombre']." ".$row['apellido'];
-        $posted_image = $row['imagen'];
-        $id = $row['id_post'];
-        ?>
+                <?php
+                    $query = $conn->query("select * from post LEFT JOIN miembros on miembros.id_miembro = post.id_miembro order by id_post DESC");
+                    while($row = $query->fetch()){
+                    $posted_by = $row['nombre']." ".$row['apellido'];
+                    $posted_image = $row['imagen'];
+                    $id = $row['id_post'];
+                ?>
                 <div class="col-md-2 col-sm-3 text-center">
-                <img  src="<?php echo $posted_image; ?>" style="width:100px;height:100px" class="img-circle"></a>
+                </a>
                 </div>
-                <div class="col-md-10 col-sm-9">
+                <div class="col-md-10 col-sm-9" id="stories">
+                <div class="col-xs-9" style="text-align:left;">
+                <img  src="<?php echo $posted_image; ?>" style="width:100px;height:100px" class="img-circle"><br>
+                        <small style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="text-muted">Posteado por: <a href="#" class="text-muted"><?php echo $posted_by; ?></a></small><br>
+                            <span class="label label-info" small style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:small;"> <?php echo $row['fecha_post']; ?></span>
+                        </div>
+                        <br>
                     <div class="alert"><?php echo $row['contenido']; ?></div>
-                <div class="row">
-                    <div class="col-xs-9">
-                    <h4><span class="label label-info"> <?php echo $row['fecha_post']; ?></span></h4><h4>
-                    <small style="font-family:courier,'new courier';" class="text-muted">Posteado por:<a href="#" class="text-muted"><?php echo $posted_by; ?></a></small>
-                    </h4></div>
-                    <br><div class="col-xs-3"><a href="delete_post.php<?php echo '?id='.$id; ?>" class="btn btn-danger"><i class="icon-trash"></i> Borrar</a></div>
+                    <div class="row">
+                    <div class="col-xs-3" style="text-align:right;">
+                        <a href="delete_post.php<?php echo '?id='.$id; ?>" class="btn btn-danger">
+                        <i class="icon-trash"></i> Borrar</a></div>
+                    </div>
                 </div>
-                <br><br>
-                </div>
-        <?php } ?>		
+                <?php } ?>		
             </div>
-            <hr>
+            
             </div>
         </div>
                                                                                         

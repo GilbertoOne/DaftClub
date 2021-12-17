@@ -24,8 +24,8 @@
 			<form method="post" action="post.php">
 						<textarea name="content" placeholder="Haz tus sugerencias aquí" style="color: #111111;"></textarea>
 						<br>
-						<hr>
 						<button class="btn btn-success" id="BtnCompartir" style="color:#111111">Compartir </button>
+						<hr>
 			</form>
       </div>
     </div> 

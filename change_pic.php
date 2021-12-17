@@ -1,6 +1,13 @@
-  
 <?php include('session.php'); ?>    
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Cambiar foto de perfil</title>
+</head>
+
+    <body style="background-color: #333333">
 	<?php include('navbar.php'); ?>
 			<div id="masthead">  
 				<div class="container">
@@ -35,7 +42,7 @@
 				</div>
 				<div class="control-group">
 					<div class="controls">
-						<button type="submit" name="submit" class="btn btn-success">Cargar</button>
+						<button type="submit" name="submit" class="btn btn-success" style="color:#111111">Cargar</button>
 					</div>
 				</div>
 			</form>
