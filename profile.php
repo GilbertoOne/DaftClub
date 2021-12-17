@@ -13,7 +13,7 @@
 				<div class="container">
 				<div class="row">
       <div class="col-md-2">
-		<img class="pp" src="<?php echo $image; ?>" height="200" width="200">
+		<img class="pp" src="<?php echo $image; ?>" style="margin:10px;" height="200" width="200">
 		<br>
 		<a class="btn btn-success" href="change_pic.php">Cambiar Foto de Perfil</a>
       </div>
