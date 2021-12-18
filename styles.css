@@ -280,3 +280,16 @@ li{
     background-color:#E5E6EB;
     color: #333333;
 }
+
+#player{
+    width:640px;
+    height:360px;
+    
+}
+
+@media only screen and (max-width:600px){
+    #player{
+            width: 100%;
+            height: auto; 
+    }
+}

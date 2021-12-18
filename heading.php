@@ -22,8 +22,9 @@
 		<hr>
       <div class="col-md-5">
 			<form method="post" action="post.php">
-						<textarea name="content" placeholder="Haz tus sugerencias aquí" style="color: #111111;"></textarea>
-						<textarea name="link" placeholder="Ingresa el link" style="color: #111111;></textarea>
+						<textarea name="content" placeholder="Haz tus sugerencias aquí" style="color: #111111;" required></textarea>
+						<br>
+						<textarea name="link" placeholder="Ingresa el link" style="color: #111111;" required></textarea>
 
 						<br>
 						<button class="btn btn-success" id="BtnCompartir" style="color:#111111">Compartir </button>
