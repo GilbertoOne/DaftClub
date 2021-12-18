@@ -36,12 +36,14 @@
         $posted_by = $row['nombre']." ".$row['apellido'];
         $posted_image = $row['imagen'];
         $id = $row['id_post'];
+        $link = $row['link'];
         ?>
                 <div class="col-md-2 col-sm-3 text-center">
                 <img  src="<?php echo $posted_image; ?>" style="width:100px;height:100px" class="img-circle"></a>
                 </div>
                 <div class="col-md-10 col-sm-9">
                     <div class="alert"><?php echo $row['contenido']; ?></div>
+                    <div class="alert"><?php echo $link; ?></div>
                 <div class="row">
                     <div class="col-xs-9">
                     <h4><span class="label label-info"> <?php echo $row['fecha_post']; ?></span></h4><h4>
