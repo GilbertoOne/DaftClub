@@ -32,7 +32,7 @@
                 <br>
                     <?php
         $query = $conn->query("select * from post LEFT JOIN miembros on miembros.id_miembro = post.id_miembro order by id_post DESC");
-        while($row = $query->fetch()){
+        while($row = $query->fetch_assoc()){
         $posted_by = $row['nombre']." ".$row['apellido'];
         $posted_image = $row['imagen'];
         $id = $row['id_post'];

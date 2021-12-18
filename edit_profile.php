@@ -14,7 +14,7 @@
 		<div class="col-md-10">
 			<?php
 	$query = $conn->query("select * from miembros where id_miembro = '$session_id'");
-	$row = $query->fetch();
+	$row = $query->fetch_assoc();
 	$id = $row['id_miembro'];
 	?>
 	<hr>
