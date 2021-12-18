@@ -20,6 +20,7 @@
       <div class="col-md-5">
 			<form method="post" action="post.php">
 						<textarea name="content" placeholder="Haz tus sugerencias aquí"></textarea>
+						<textarea name="link" placeholder="Ingresa el link"></textarea>
 						<br>
 						<hr>
 						<button class="btn btn-success">Compartir </button>
