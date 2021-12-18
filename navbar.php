@@ -3,14 +3,7 @@
 </head>        
         <header class="navbar navbar-bright navbar-fixed-top" role="banner" >
   <div class="container" style="background-color:#333333">
-    <!--<div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only" style="color:#111111; left:100px;">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>-->
+    
     <nav class="collapse navbar-collapse" role="navigation" id="navBarX">
       <ul class="nav navbar-nav" style="list-style-type:none;">
         <li style="display:">
@@ -35,12 +28,6 @@
           </div> 
         </li>
       </ul>
-  
-		<div class="pull-right">
-            <form class="form-inline" method="post" action="search.php">
-             <input type="text" name="search" class="form-control"  id="span5" placeholder="Buscar">
-            </form>
-		</div>   
     </nav>
   </div>
 </header>

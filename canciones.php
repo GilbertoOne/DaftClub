@@ -1,8 +1,28 @@
 <?php include('dbcon.php'); ?>
 <?php include('session.php'); ?>  
 <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Tus canciones</title>
+</head>
 <html>
-  <body>
+<?php include('navbar.php'); ?>
+    <div id="masthead">  
+                    <div class="container">
+                    <?php include('headingSongs.php'); ?>
+                    </div><!-- /cont -->
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-md-12">
+                            <div class="top-spacer"> </div>
+                        </div>
+                        </div> 
+                    </div><!-- /cont -->
+                </div>
+  <body   style="background-color:#333333" class="fadeClass">
     
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <?php 
@@ -18,6 +38,15 @@
       <iframe id="player" type="text/html" width="640" height="360"
   src="http://www.youtube.com/embed/<?php echo $link ?>?enablejsapi=1&origin=http://example.com" 
   frameborder="0"></iframe>
+  <br>
+  <div class="col-xs-3" style="text-align:center;"> 
+  <?php
+  if($_SESSION['id']==$row['id_miembro']){?>
+    <a href="delete_post.php<?php echo '?id='.$id; ?>" class="btn btn-danger">
+    <i class="icon-trash"></i> Borrar canción posteada</a></div>
+  <?php
+  }
+  ?>                
   <br>
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.

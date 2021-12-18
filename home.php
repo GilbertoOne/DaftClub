@@ -53,12 +53,6 @@
                     <div class="alert"><?php echo $row['contenido']; ?></div>
 
                     <div class="row">
-                    <div class="col-xs-3" style="text-align:right;">
-                        <a href="delete_post.php<?php echo '?id='.$id; ?>" class="btn btn-danger">
-                        <i class="icon-trash"></i> Borrar</a></div>
-                    </div>
-
-                    <div class="alert"><?php echo $link; ?>
                     <?php 
     
     
@@ -68,6 +62,14 @@
       <iframe id="player" type="text/html" width="640" height="360"
   src="http://www.youtube.com/embed/<?php echo $link ?>?enablejsapi=1&origin=http://example.com" 
   frameborder="0"></iframe>
+  <div class="col-xs-3" style="text-align:left;"> 
+  <?php
+  if($_SESSION['id']==$row['id_miembro']){?>
+    <a href="delete_post.php<?php echo '?id='.$id; ?>" class="btn btn-danger">
+    <i class="icon-trash"></i> Borrar</a></div>
+  <?php
+  }
+  ?>                
   <br>
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
@@ -109,14 +111,6 @@
     // Search for a specified string.
     </script>
                     </div>
-                <div class="row">
-                    <div class="col-xs-9">
-                    <h4><span class="label label-info"> <?php echo $row['fecha_post']; ?></span></h4><h4>
-                    <small style="font-family:courier,'new courier';" class="text-muted">Posteado por:<a href="#" class="text-muted"><?php echo $posted_by; ?></a></small>
-                    </h4></div>
-                    <br><div class="col-xs-3"><a href="delete_post.php<?php echo '?id='.$id; ?>" class="btn btn-danger"><i class="icon-trash"></i> Borrar</a></div>
-                </div>
-                <br><br>
 
                 </div>
                 <?php } ?>		
