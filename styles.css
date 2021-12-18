@@ -1,0 +1,282 @@
+/*Globales*/
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    color: #E5E6EB;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    transition: .3s;
+    color: #0078a7;
+}
+input{
+    color:#111111;
+}
+button:not(:hover){
+    background-color: #333333;
+    font-size: large;
+    width: 50%;
+    transition: .4s;
+}
+button:hover{
+    font-size: large;
+    width: 50%;
+    transition: .4s;
+    background-color:#E5E6EB;
+    color: #333333;
+}
+/*Clases*/
+
+.fadeClass {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+/*index.php*/
+#login{
+    background-color: #555555;
+    margin-top: 80px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 400px;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+#btn_login:not(:hover){
+    background-color: #333333;
+    font-size: large;
+    width: 50%;
+    transition: .4s;
+}
+#btn_login:hover{
+    transition: .4s;
+    background-color:#E5E6EB;
+    color: #333333;
+    font-size: large;
+    width: 50%;
+}
+
+/*login_form.php*/
+#sign_up_form{
+    background-color: #555555;
+    margin-top: 70px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 600px;
+    font-size: larger;
+    border-radius: 10px;
+}
+#btn_sign_up:not(:hover){
+    background-color: #333333;
+    font-size: large;
+    width: 50%;
+    transition: .4s;
+}
+#btn_sign_up:hover{
+    font-size: large;
+    width: 50%;
+    transition: .4s;
+    background-color:#E5E6EB;
+    color: #333333;
+}
+
+/*Barras de navegación*/
+header{
+    position: sticky;
+    top:0;
+    z-index: 20;
+}
+#navBarX{
+    background-color:#111111;
+    list-style-type: none;
+    padding: 15px;
+    width: 98%;
+}
+li{
+    display: inline-block;
+}
+#InicioBtn:not(:hover){
+    width: 150px;
+    color: #E5E6EB;
+    text-align: center;
+    background: #111111;
+    margin:auto;
+    transition: .4s;
+}
+#InicioBtn:hover{
+    width: 150px;
+    color: #111111;
+    background: #333333;
+    margin:auto;
+    transition: .4s;
+}
+/**/
+#PerfilBtn:not(:hover){
+    transition: .4s;
+    margin:auto;
+    width: 150px;
+    color: #E5E6EB;
+    text-align: center;
+    background: #111111;
+}
+#PerfilBtn:hover{
+    transition: .4s;
+    margin:auto;
+    width: 150px;
+    color: #E5E6EB;
+    text-align: center;
+    background: #333333;
+}
+/**/
+#CancionesBtn:not(:hover){
+    transition: .4s;
+    margin:auto;
+    width: 150px;
+    color: #E5E6EB;
+    text-align: center;
+    background: #111111;
+}
+#CancionesBtn:hover{
+    transition: .4s;
+    margin:auto;
+    width: 150px;
+    color: #E5E6EB;
+    text-align: center;
+    background: #333333;
+}
+/**/
+#MensajesBtn:not(:hover){
+    transition: .4s;
+    margin:auto;
+    width: 150px;
+    color: #E5E6EB;
+    text-align: center;
+    background: #111111;
+}
+#MensajesBtn:hover{
+    transition: .4s;
+    margin:auto;
+    width: 150px;
+    color: #E5E6EB;
+    text-align: center;
+    background: #333333;
+}
+/**/
+#SalirBtn:not(:hover){
+    transition: .4s;
+    margin:auto;
+    width: 150px;
+    color: #E5E6EB;
+    text-align: center;
+    background: #111111;
+}
+#SalirBtn:hover{
+    transition: .4s;
+    margin:auto;
+    width: 150px;
+    color: #E5E6EB;
+    text-align: center;
+    background: #333333;
+}
+/**/
+#span5:not(:hover){
+    transition: .1s;
+    width:10%;
+    color:#111111;
+}
+#span5:hover{
+    transition: .1s;
+    width:40%;
+}
+
+/*Left Bar*/
+#left-bar{
+    margin: 20px;
+    padding:10px;
+    width:25%;
+    left: 0px;
+}
+/*Si la pantalla se reduce a menos de 600px*/
+@media only screen and (max-width:600px){
+    #left-bar{
+        width:100%;
+        margin: auto;
+    }
+}
+
+/*Sección de post*/
+#post-section{
+    margin:5px;
+    padding:10px;
+    position:absolute;
+    visibility: visible;
+    z-index: 1;
+    right:0px;
+    width:70%;
+    top: 170px;
+}
+/*Si la pantalla se reduce a menos de 600px*/
+@media only screen and (max-width:600px){
+    #post-section{
+        z-index: 1;
+        width:100%;
+        margin: auto;
+        top: 750px;
+        left: 5px;
+    }
+}
+#FotoPerfil:not(:hover){
+    background-color: #333333;
+    transition: .4s;
+}
+#FotoPerfil:hover{
+    background-color: #111111; 
+    transition: .4s;
+}
+#stories{
+    color : #111111;
+    background-color: #ffffff3d;
+    border:1px solid;
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding-top:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+#BtnCompartir:not(:hover){
+    background-color: #333333;
+    font-size: large;
+    width: 50%;
+    transition: .4s;
+}
+#BtnCompartir:hover{
+    font-size: large;
+    width: 50%;
+    transition: .4s;
+    background-color:#E5E6EB;
+    color: #333333;
+}

@@ -1,3 +1,5 @@
+<?php $conn = new PDO('mysql:host=localhost;dbname=daftclub', 'root', ''); ?>
+=======
 
 <?php
 $servername = "34.125.201.15:3306";

@@ -1,6 +1,13 @@
 
-<?php include('session.php'); ?>    
-    <body>
+<?php include('session.php'); ?>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Editar Perfil</title>
+</head>    
+    <body style="background-color:#333333;">
 	<?php include('navbar.php'); ?>
 			<div id="masthead">  
 				<div class="container">
@@ -18,7 +25,7 @@
 	$id = $row['id_miembro'];
 	?>
 	<hr>
-					<form method="post" action="save_edit.php">
+	<form method="post" action="save_edit.php">
 	<input type="hidden" name="id_miembro" value="<?php echo $id; ?>">
 	Usuario:<input type="text" name="username" value="<?php echo $row['username']; ?>">
 	<hr>
@@ -27,7 +34,7 @@
 	Apellido:<input type="text" name="apellido" value="<?php echo $row['apellido']; ?>">
 	<hr>
 	Género:
-	<select name="genero">
+	<select name="genero" style="color:#111111">
 		<option><?php echo $row['genero']; ?></option>
 		<option>Hombre</option>
 		<option>Mujer</option>
@@ -36,7 +43,7 @@
 	Fecha de Nacimiento:<input name="fecha_nac" type="text" value="<?php echo $row['fecha_nac']; ?>">
 	<hr>
 	Género musical:
-	<select name="genero_musical">
+	<select name="genero_musical" style="color:#111111">
 		<option><?php echo $row['genero_musical']; ?></option>
             <option>Rock</option>
             <option>Pop</option>
