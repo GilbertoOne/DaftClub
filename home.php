@@ -60,7 +60,7 @@
     
      ?>
       <iframe id="player" type="text/html" width="640" height="360"
-  src="http://www.youtube.com/embed/<?php echo $link ?>?enablejsapi=1&origin=http://example.com" 
+  src="http://www.youtube.com/embed/<?php echo $link ?>" 
   frameborder="0"></iframe>
   <div class="col-xs-3" style="text-align:left;"> 
   <?php
