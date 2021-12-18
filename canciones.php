@@ -6,6 +6,9 @@
     $link[0] = "iOOK_sw9d7Y";
     $link[1] = "zm9hb03dvaw";
     $link[2] = "cpvC8_NMXmU";
+    $variable = "https://www.youtube.com/watch?v=cpvC8_NMXmU";
+    $variable = substr($variable, strpos($variable, "=")+1);
+    echo "$variable <br>";
     for($i=0;$i<3;$i++){ ?>
       <iframe id="player" type="text/html" width="640" height="360"
   src="http://www.youtube.com/embed/<?php echo $link[$i] ?>?enablejsapi=1&origin=http://example.com" 
