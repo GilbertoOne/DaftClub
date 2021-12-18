@@ -7,8 +7,9 @@ $password = $_POST['password'];
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $gender = $_POST['gender'];
+$musicgender = $_POST['musicgender'];
 
-$conn->query("insert into miembros (username,password,nombre,apellido,genero,imagen) values ('$username','$password','$firstname','$lastname','$gender','images/No_Photo_Available.jpg')");	
+$conn->query("insert into miembros (username,password,nombre,apellido,genero,imagen,genero_musical,fecha_nac,status) values ('$username','$password','$firstname','$lastname','$gender','images/No_Photo_Available.jpg','$musicgender','','')");	
 ?>
 <script>
 	alert('Registrado con éxito');
