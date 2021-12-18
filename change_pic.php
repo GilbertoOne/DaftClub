@@ -24,7 +24,7 @@
 			<p>Información personal</p>
 				<?php
 			$query = $conn->query("select * from miembros where id_miembro = '$session_id'");
-			$row = $query->fetch();
+			$row = $query->fetch_assoc();
 			$id = $row['id_miembro'];
 			?>
 			
@@ -64,7 +64,6 @@
 	}
 	?>
       </div>
-    
   </div>
 </div>
         

@@ -17,6 +17,7 @@
           <div style="cursor:pointer;" onclick="location.href='home.php'" id="InicioBtn" class="navbar-brand">
             <B>Inicio</B>
           </div> 
+
         </li>
         <li>      
           <div style="cursor:pointer;" onclick="location.href='profile.php'" id="PerfilBtn" class="navbar-brand">
@@ -28,12 +29,6 @@
             <B>Canciones</B>
           </div> 
         </li>
-		    <li>
-          <div style="cursor:pointer;" onclick="location.href='message.php'" id="MensajesBtn" class="navbar-brand">
-            <B>Mensajes</B>
-          </div> 
-        </li>
-
         <li>
           <div style="cursor:pointer;" onclick="location.href='logout.php'" id="SalirBtn" class="navbar-brand">
             <B>Cerrar Sesión</B>

@@ -2,6 +2,7 @@
 include('dbcon.php');
 include('session.php');
 $content = $_POST['content'];
-$conn->query("insert into post (contenido,fecha_post,id_miembro) values('$content',NOW(),'$session_id')");
+$link = $_POST['link'];
+$conn->query("insert into post (contenido,fecha_post,id_miembro,link) values('$content',NOW(),'$session_id','$link')");
 header('location:home.php');
 ?>

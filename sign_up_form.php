@@ -47,7 +47,7 @@
     </p>
     <p class="change_link">
         ¿Ya estás registrado?
-        <a href="/DaftClub/index.php" class="to_register">Ingresar</a>
+        <a href="index.php" class="to_register">Ingresar</a>
     </p>
 </form>
 </body>

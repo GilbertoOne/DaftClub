@@ -23,7 +23,7 @@
 			<div class="pull-right" style="text-align:left; font-size: larger;"><a href="edit_profile.php" class="btn btn-info"><i class="icon-pencil"></i> Editar</a></div>
 				<?php
 			$query = $conn->query("select * from miembros where id_miembro = '$session_id'");
-			$row = $query->fetch();
+			$row = $query->fetch_assoc();
 			$id = $row['id_miembro'];
 			?>
 			
