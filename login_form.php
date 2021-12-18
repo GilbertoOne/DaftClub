@@ -14,6 +14,6 @@
     </p>
     <p class="change_link">
         ¿No estás registrado?
-        <a href="/DaftClub/sign_up_form.php" class="to_register">Regístrate</a>
+        <a href="sign_up_form.php" class="to_register">Regístrate</a>
     </p>
 </form>
