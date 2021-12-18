@@ -1,17 +1,22 @@
+<?php include('dbcon.php'); ?>
+<?php include('session.php'); ?>  
 <!DOCTYPE html>
 <html>
   <body>
+    
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <?php 
-    $link[0] = "iOOK_sw9d7Y";
-    $link[1] = "zm9hb03dvaw";
-    $link[2] = "cpvC8_NMXmU";
-    $variable = "https://www.youtube.com/watch?v=cpvC8_NMXmU";
-    $variable = substr($variable, strpos($variable, "=")+1);
-    echo "$variable <br>";
-    for($i=0;$i<3;$i++){ ?>
+    $query = $conn->query("select * from post where id_miembro = $session_id order by id_post DESC");
+    while($row = $query->fetch_assoc()){
+      
+    $id = $row['id_post'];
+    $link = $row['link'];
+    
+    $link = substr($link, strpos($link, "=")+1);
+    
+    ?>
       <iframe id="player" type="text/html" width="640" height="360"
-  src="http://www.youtube.com/embed/<?php echo $link[$i] ?>?enablejsapi=1&origin=http://example.com" 
+  src="http://www.youtube.com/embed/<?php echo $link ?>?enablejsapi=1&origin=http://example.com" 
   frameborder="0"></iframe>
   <br>
     <script>
@@ -53,6 +58,6 @@
       }
     // Search for a specified string.
     </script>
-   <?php } ?>
+    <?php } ?>
   </body>
 </html>

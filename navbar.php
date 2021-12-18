@@ -14,7 +14,6 @@
       <ul class="nav navbar-nav">
         <li><a href="profile.php">Perfil</a></li>
         <li><a href="canciones.php">Canciones</a></li>
-		<li><a href="message.php">Mensajes</a>
         </li>
         <li>
           <a href="logout.php">Cerrar Sesión</a>
