@@ -69,7 +69,8 @@
     <i class="icon-trash"></i> Borrar</a></div>
   <?php
   }
-  ?>                
+  ?>
+  </div>                
   <br>
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
