@@ -108,7 +108,7 @@
       function stopVideo() {
         player.stopVideo();
       }
-    // Search for a specified string.
+    
     </script>
                     </div>
 
